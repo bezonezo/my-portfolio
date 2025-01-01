@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبدالرحمن محمود - حلول تقنية فاخرة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* إعادة ضبط عام */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: #0A0A0A;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #6A11CB, #2575FC);
+            color: #FFF;
+            padding: 150px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            animation: fadeInDown 2s ease-in-out;
+        }
+        header p {
+            font-size: 20px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 36px;
+            color: #6A11CB;
+            margin-bottom: 30px;
+            animation: slideInLeft 1.5s ease-in-out;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service {
+            background-color: #1A1A1A;
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .service img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .service h3 {
+            font-size: 20px;
+            color: #6A11CB;
+            margin-bottom: 10px;
+        }
+        .service p {
+            font-size: 14px;
+            color: #CCCCCC;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .portfolio-item {
+            background-color: #1A1A1A;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #2C2C2C;
+            padding: 20px;
+        }
+        .portfolio-item p {
+            padding: 15px;
+            font-size: 16px;
+            color: #CCCCCC;
+        }
+        .cta {
+            background: linear-gradient(135deg, #6A11CB, #2575FC);
+            color: #FFF;
+            padding: 80px 20px;
+            text-align: center;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        }
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .cta-buttons a {
+            background-color: #FFF;
+            color: #6A11CB;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-buttons a:hover {
+            background-color: #6A11CB;
+            color: #FFF;
+        }
+        .cta-buttons a i {
+            font-size: 20px;
+        }
+        footer {
+            background-color: #1A1A1A;
+            color: #FFF;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+    <!-- رابط أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#6A11CB" />
+            <text x="50%" y="50%" text-anchor="middle" fill="#FFF" font-size="40" font-family="Almarai" dy=".3em">A</text>
+        </svg>
+        <h1>عبدالرحمن محمود</h1>
+        <p>مطور ومبدع متخصص في تقديم حلول تقنية فاخرة</p>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>من أنا؟</h2>
+        <p>مرحبًا، أنا عبدالرحمن محمود، مُطور ومبدع متخصص في تقديم حلول تقنية شاملة بجودة فائقة. أعمل على تحويل الأفكار إلى واقع من خلال مجموعة واسعة من الخدمات تشمل كتابة المقالات، تطوير الأكواد البرمجية، إنشاء الصور والفيديوهات، تصميم الشعارات، وتطوير الألعاب الإلكترونية. ما يميزني هو السرعة والدقة العالية مع الالتزام التام بالمواعيد.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <h2>الخدمات التي أقدمها</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png" alt="تطوير البرمجيات">
+                <h3>تطوير البرمجيات</h3>
+                <p>تصميم وتطوير تطبيقات وبرمجيات مخصصة.</p>
+            </div>
+            <div class="service">
+                <img src="https://cdn-icons-png.flaticon.com/512/3242/3242257.png" alt="تصميم الواجهات">
+                <h3>تصميم الواجهات</h3>
+                <p>تصميم واجهات مستخدم جذابة وسهلة الاستخدام.</p>
+            </div>
+            <div class="service">
+                <img src="https://cdn-icons-png.flaticon.com/512/1998/1998664.png" alt="الذكاء الاصطناعي">
+                <h3>الذكاء الاصطناعي</h3>
+                <p>إنشاء تطبيقات تعتمد على الذكاء الاصطناعي.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section>
+        <h2>معرض الأعمال</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="artificial-intelligence.png" alt="تطبيق الذكاء الاصطناعي">
+                <p>تطبيق للتواصل مع الذكاء الاصطناعي.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="website.png" alt="موقع ويب">
+                <p>موقع ويب تفاعلي لتقديم الخدمات.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="slack.png" alt="تصميم شعار">
+                <p>تصميم شعار لشركة ناشئة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>هل أنت مستعد لبدء مشروعك القادم؟</h2>
+        <div class="cta-buttons">
+            <a href="mailto:abdrhmanabide@gmail.com">
+                <i class="fas fa-envelope"></i>
+                البريد الإلكتروني
+            </a>
+            <a href="https://wa.me/249110720620" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                واتساب
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 عبدالرحمن محمود. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
